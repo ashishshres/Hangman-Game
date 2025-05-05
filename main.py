@@ -123,11 +123,12 @@ while not end_of_game and remaining_lives > 0:
       display[index] = user_guess
       guess = True
 
-  print(f"{' '.join(display)}\n")
-
   if not guess:
     remaining_lives -= 1
-    print(stages[remaining_lives])
+    print(f"Oops! '{user_guess}' isn't in the word. You lost a life.")
+
+  print(f"{' '.join(display)}\n")
+  print(stages[remaining_lives])
 
   if "_" not in display:
     end_of_game = True
@@ -137,9 +138,9 @@ while not end_of_game and remaining_lives > 0:
 display = ''.join(display) 
 
 if display == random_word:
-  print("You win!")
+  print("Well done! You've survived the hangman and uncovered the word.")
 else:
-  print("You loose!")
+  print(f"Oh no! You're out of lives. The word was '{random_word}'. Better luck next time!")
 
 # alternative
 # while blank:
