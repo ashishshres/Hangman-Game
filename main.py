@@ -1,103 +1,11 @@
 import random
+from modules.logo import logo
+from modules.stages import stages
+from modules.word_list import word_list
 
-print('''
-
-                                                   ___                     
-  /\\  /\\__ _ _ __   __ _ _ __ ___   __ _ _ __     / _ \\__ _ _ __ ___   ___ 
- / /_/ / _` | '_ \\ / _` | '_ ` _ \\ / _` | '_ \\   / /_\\/ _` | '_ ` _ \\ / _ \\
-/ __  / (_| | | | | (_| | | | | | | (_| | | | | / /_\\\\ (_| | | | | | |  __/
-\\/ /_/ \\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_| \\____/\\__,_|_| |_| |_|\\___|
-                   |___/                                                   
-
-''')
+print(logo)
 
 print("The fate of the hangman is in your hands!")
-
-stages = [
-    '''
-      +---+
-      |   |
-      O   |
-     /|\\  |
-     / \\  |
-          |
-    =========
-    ''',
-    '''
-      +---+
-      |   |
-      O   |
-     /|\\  |
-          |
-          |
-    =========
-    ''',
-    '''
-      +---+
-      |   |
-      O   |
-     /|   |
-          |
-          |
-    =========
-    ''',
-    '''
-      +---+
-      |   |
-      O   |
-      |   |
-          |
-          |
-    =========
-    ''',
-    '''
-      +---+
-      |   |
-      O   |
-          |
-          |
-          |
-    =========
-    ''',
-    '''
-      +---+
-      |   |
-          |
-          |
-          |
-          |
-    =========
-    '''
-]
-
-word_list = [
-    "apple", "ant", "anchor", "arrow", "apricot", "artist", "album", "alarm", "ankle", "astronaut",
-    "banana", "basket", "button", "bottle", "bridge", "blanket", "breeze", "bucket", "bubble", "biscuit",
-    "camera", "candle", "castle", "circle", "cactus", "cookie", "curtain", "crystal", "cabinet", "carpet",
-    "dragon", "donkey", "desert", "drawer", "diamond", "doctor", "drum", "dolphin", "danger", "dustbin",
-    "eagle", "earth", "elbow", "engine", "energy", "elephant", "envelope", "eraser", "echo", "eclipse",
-    "flower", "forest", "finger", "feather", "family", "fence", "flute", "flag", "fox", "freedom",
-    "guitar", "garden", "globe", "garage", "grape", "goose", "gold", "glass", "glove", "gate",
-    "house", "hammer", "helmet", "hippo", "honey", "hill", "holiday", "horse", "hook", "harbor",
-    "island", "iceberg", "igloo", "insect", "idea", "inch", "icon", "input", "item", "issue",
-    "jungle", "jacket", "jewel", "joker", "jigsaw", "jelly", "jogger", "journal", "jar", "jam",
-    "kite", "kangaroo", "keyboard", "kitchen", "kitten", "kettle", "king", "knife", "knot", "kayak",
-    "lemon", "ladder", "lantern", "laptop", "lizard", "library", "lamb", "leaf", "lock", "light",
-    "monkey", "mountain", "mirror", "magnet", "motor", "mango", "mouse", "mask", "menu", "magic",
-    "notebook", "needle", "nest", "night", "nail", "noise", "narrow", "name", "net", "number",
-    "ocean", "orange", "ostrich", "oven", "object", "orbit", "owl", "onion", "oil", "oxygen",
-    "pencil", "panda", "pillow", "planet", "poster", "paint", "pan", "pumpkin", "pearl", "parrot",
-    "queen", "quilt", "quiz", "quiver", "quartz", "quote", "queue", "quack", "quiet", "quick",
-    "rabbit", "rocket", "rainbow", "river", "robot", "ruler", "rose", "ring", "road", "rope",
-    "sun", "star", "school", "spoon", "ship", "shadow", "socks", "stone", "sand", "swan",
-    "tiger", "table", "train", "truck", "tent", "tooth", "tower", "towel", "tap", "tool",
-    "umbrella", "uniform", "unicorn", "utensil", "urban", "umpire", "update", "unit", "uplift", "usage",
-    "violin", "village", "vase", "van", "vest", "vulture", "vacuum", "valley", "voice", "vote",
-    "whale", "window", "water", "wagon", "wheel", "wolf", "wall", "wing", "watch", "wind",
-    "xylophone", "xenon", "xylem", "xerox", "xenial", "xenolith", "xanthic", "xenogeny", "xiphoid", "xenopus",
-    "yacht", "yak", "yellow", "yawn", "yarn", "yogurt", "yolk", "year", "yesterday", "yard",
-    "zebra", "zoo", "zipper", "zero", "zinc", "zone", "zigzag", "zest", "zeal", "zodiac"
-]
 
 random_word = random.choice(word_list)
 # print(f"Random word is {random_word}")
